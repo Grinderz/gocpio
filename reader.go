@@ -179,3 +179,7 @@ func (r *Reader) countedRead(b []byte) (n int, e error) {
 	r.pos += int64(n)
 	return
 }
+
+func (r *Reader) Pos() int64 {
+	return r.pos
+}
